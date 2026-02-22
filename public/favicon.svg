@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07111f"/>
+      <stop offset="100%" style="stop-color:#0f2040"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="64" height="64" rx="10" fill="url(#bg)"/>
+  <rect width="64" height="64" rx="10" fill="none" stroke="#1a6cff" stroke-width="1.5" opacity="0.6"/>
+  <!-- Corner accent top-right -->
+  <line x1="52" y1="2" x2="62" y2="2" stroke="#f5a623" stroke-width="2"/>
+  <line x1="62" y1="2" x2="62" y2="12" stroke="#f5a623" stroke-width="2"/>
+  <!-- Corner accent bottom-left -->
+  <line x1="2" y1="52" x2="2" y2="62" stroke="#f5a623" stroke-width="2"/>
+  <line x1="2" y1="62" x2="12" y2="62" stroke="#f5a623" stroke-width="2"/>
+  <!-- TF -->
+  <text x="7" y="30" font-family="Arial Black, sans-serif" font-weight="900" font-size="19" fill="#4d8fff" letter-spacing="-1">TF</text>
+  <!-- divider line -->
+  <line x1="7" y1="36" x2="57" y2="36" stroke="#1a6cff" stroke-width="1" opacity="0.5"/>
+  <!-- </> -->
+  <text x="7" y="54" font-family="Courier New, monospace" font-weight="700" font-size="15" fill="#f5a623">&lt;/&gt;</text>
+</svg>
