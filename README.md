@@ -1,16 +1,29 @@
-# React + Vite
+# 👨‍💻 Portfólio | Thiago Fernando
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Acessar Portfólio](https://img.shields.io/badge/Acessar-Portfólio-07111f?style=for-the-badge&logo=vercel)](https://portfolio-thiagosp.vercel.app/)
 
-Currently, two official plugins are available:
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para centralizar minha trajetória, projetos técnicos e evolução como Desenvolvedor Full-Stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo Profissional
 
-## React Compiler
+Atualmente cursando Engenharia da Computação, estou em busca da minha **primeira oportunidade profissional como Estagiário ou Desenvolvedor Júnior**. 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Minha base interdisciplinar une a estruturação lógica das Ciências Exatas à análise crítica das Humanas, criando um perfil focado em investigar problemas na raiz, documentar processos com rigor e absorver qualquer ecossistema tecnológico com profundidade.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias e Arquitetura
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto foi construído com foco em performance, componentização e boas práticas de distribuição web:
+
+* **Frontend:** React.js
+* **Engine de Build:** Vite (Garantindo compilação e *Hot Module Replacement* ultrarrápidos)
+* **Integração Contínua & Deploy:** Vercel
+* **PWA (Progressive Web App):** Estrutura configurada com `manifest.json` e ícones escaláveis, permitindo instalação nativa em dispositivos móveis e desktops.
+* **SEO e Metadados:** Implementação nativa de *Open Graph Tags* para otimização de previews em redes sociais e aplicativos de mensageria corporativa.
+
+## ⚙️ Como executar o projeto localmente
+
+Para inspecionar o código ou rodar o ambiente de desenvolvimento na sua máquina, siga os passos abaixo:
+
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/Thiago-spba/Portfolio-thiago.git](https://github.com/Thiago-spba/Portfolio-thiago.git)

@@ -391,7 +391,7 @@ const formation = [
     deg: "Engenharia da Computação",
     inst: "Centro Universitário Celso Lisboa",
     s: "on",
-    l: "Cursando · 4º Semestre",
+    l: "Cursando · 5º Semestre",
   },
   {
     deg: "Licenciatura em Matemática",
@@ -1025,11 +1025,10 @@ export default function App() {
           <div className="about-text">
             <p>
               Sou Thiago, entusiasta da tecnologia e estudante de{" "}
-              <strong>Engenharia da Computação</strong>. Antes de programar, fui
-              professor — formado em <strong>História</strong> e{" "}
-              <strong>Matemática</strong> —, o que me deu algo raro em tech: a
-              capacidade de <strong>comunicar com clareza</strong> e aprender
-              com profundidade.
+              <strong>Engenharia da Computação</strong>. Unindo o raciocínio
+              lógico das <strong>Ciências Exatas</strong> à visão contextual das{" "}
+              <strong>Ciências Humanas</strong>, construí uma base sólida que me
+              permite aprender qualquer ferramenta ou tecnologia com facilidade.
             </p>
             <p>
               Hoje construo aplicações <strong>Full-Stack</strong>:{" "}
@@ -1051,18 +1050,18 @@ export default function App() {
             {[
               [
                 "01",
-                "Professor de Matemática e História",
-                "Aprendi a simplificar o complexo e comunicar com clareza.",
+                "Na graduação de História e  Matemática",
+                "Aprendi simplificar pra entender .",
               ],
               [
                 "02",
                 "Oracle ONE + Bootcamp Santander",
-                "500h+ de formação intensiva: React, Java, AWS, SQL, Cibersegurança.",
+                "1.000h+ de formação intensiva: React, Java, AWS, SQL, Cibersegurança.",
               ],
               [
                 "03",
-                "Engenharia da Computação",
-                "Base teórica sólida em sistemas, algoritmos e arquitetura.",
+                "Graduando em Engenharia da Computação",
+                "Base teórica em sistemas, algoritmos e arquitetura.",
               ],
               [
                 "04",
@@ -1285,11 +1284,11 @@ export default function App() {
             {[
               [
                 "Aprendizado acelerado",
-                "500h+ de formação em menos de 2 anos, com projetos reais desde o início.",
+                "1.000h+ de formação em menos de 2 anos, com projetos reais desde o início.",
               ],
               [
-                "Comunicação excelente",
-                "Ex-professor: documenta bem, explica com clareza, trabalha bem em equipe.",
+                "Comunicativo",
+                "Clareza e trabalho em equipe.",
               ],
               [
                 "Stack relevante",
