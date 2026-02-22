@@ -950,7 +950,7 @@ export default function App() {
             Em transição de carreira, construindo com{" "}
             <strong>dedicação e aprendizado constante</strong>. Professor por
             formação — desenvolvedor por escolha. Mais de{" "}
-            <strong>500h de capacitação prática</strong> e projetos reais no ar.
+            <strong>1.000h de capacitação prática</strong> e projetos reais no ar.
           </p>
           <div className="hero-stack">
             React · Java · Firebase · AWS · SQL · Spring Boot
@@ -1003,7 +1003,7 @@ export default function App() {
         <div className="stats-inner">
           {[
             ["10+", "Projetos no GitHub"],
-            ["500h+", "Horas de Capacitação"],
+            ["1.000h+", "Horas de Capacitação"],
             [certs.length + "", "Certificados Obtidos"],
             ["4", "Formações Acadêmicas"],
           ].map(([n, l]) => (
@@ -1035,7 +1035,7 @@ export default function App() {
               <strong>React</strong> no Front-End e{" "}
               <strong>Java + Firebase</strong> no Back-End. Participei do{" "}
               <strong>Oracle ONE (Alura)</strong> e do{" "}
-              <strong>Bootcamp Santander / DIO</strong>, com mais de 500h de
+              <strong>Bootcamp Santander / DIO</strong>, com mais de 1.000h de
               formação prática em desenvolvimento, cloud e cibersegurança.
             </p>
             <p>
