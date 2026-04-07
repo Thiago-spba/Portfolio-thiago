@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const LINKEDIN = "https://www.linkedin.com/in/thiagospfernando/";
+const LINKEDIN = "https://www.linkedin.com/in/thiagospabc/";
 const GITHUB = "https://github.com/Thiago-spba";
 const EMAIL = "thiagofernando_sp@yahoo.com.br";
 const ALURA = "https://cursos.alura.com.br/user/thiagofernando-sp";
@@ -397,19 +397,19 @@ const formation = [
     deg: "Licenciatura em Matemática",
     inst: "Centro Universitário Ítalo Brasileiro",
     s: "off",
-    l: "Concluída · 2025",
+    l: "Concluída",
   },
   {
     deg: "Licenciatura em História",
     inst: "Centro Universitário Anhanguera Pitágoras AMPLI",
     s: "off",
-    l: "Concluída · 2024",
+    l: "Concluída",
   },
   {
     deg: "Pós-Graduação em Metodologia de Ensino de História",
     inst: "Faculdade Focus",
     s: "off",
-    l: "Concluída · 2024",
+    l: "Concluída",
   },
 ];
 
@@ -444,18 +444,18 @@ const skills = {
 
 const allProjects = [
   {
-    cat: "full-stack",
-    tag: "FULL-STACK",
+    cat: "front-end",
+    tag: "FRONT-END",
     name: "OLLO – Rede Social Cultural",
-    desc: "Plataforma social completa com React/Vite no Front-End e Firebase no Back-End. Autenticação de usuários e banco de dados NoSQL em tempo real (Firestore). Código privado por conter dados de usuários reais — documentação disponível com prints.",
+    desc: "Plataforma social completa com React/Vite no Front-End e Firebase no Back-End. Autenticação de usuários e banco de dados NoSQL em tempo real (Firestore). Projeto público com documentação e prints disponíveis para consulta.",
     stack: ["React", "Vite", "Tailwind CSS", "Firebase", "Firestore"],
     demo: "https://app-ollo.vercel.app",
     repo: null,
-    repoLabel: "PRIVADO",
+    repoLabel: "PÚBLICO",
   },
   {
-    cat: "full-stack",
-    tag: "FULL-STACK · IA",
+    cat: "front-end",
+    tag: "Desenvolvedor Front-End Jr · IA",
     name: "Dashboard Tisanaria – BI & CRM",
     desc: "Sistema de Business Intelligence para produtos naturais. Dashboard interativo com React, Tailwind CSS e integração com IA (Gemini API) para recomendações personalizadas. Dados simulados com foco na lógica de negócio.",
     stack: ["React", "Tailwind CSS", "Gemini API", "BI", "CRM"],
@@ -464,12 +464,19 @@ const allProjects = [
   },
   {
     cat: "front-end",
-    tag: "FRONT-END · API",
-    name: "Cineflix História – Plataforma de Vídeos",
-    desc: "Plataforma de vídeos educativos com conteúdo histórico. Permite adicionar e excluir vídeos de forma interativa. Back-end simulado com JSON Server, demonstrando consumo de API REST.",
-    stack: ["JavaScript", "JSON Server", "REST API", "YouTube Player"],
-    demo: "https://github.com/Thiago-spba/cineflix-historia",
-    repo: "https://github.com/Thiago-spba/cineflix-historia",
+    tag: "FRONT-END · PWA",
+    name: "OlloApp Engineering Lab — Portal Educacional",
+    desc: "Portal educacional interativo do ecossistema OLLO, com módulos de Eletrônica Digital, Circuitos Elétricos e Redes de Computadores. Conteúdo gratuito, sem cadastro, com quizzes, podcasts e linha do tempo histórica.",
+    stack: [
+      "HTML5",
+      "Tailwind CSS",
+      "JavaScript",
+      "Firebase",
+      "PWA",
+      "NotebookLM",
+    ],
+    demo: "https://edu.olloapp.com.br",
+    repo: "https://github.com/Thiago-spba/App-OLLO",
   },
   {
     cat: "front-end",
@@ -538,7 +545,6 @@ const allProjects = [
 
 const PROJ_CATS = [
   { id: "todos", label: "TODOS" },
-  { id: "full-stack", label: "FULL-STACK" },
   { id: "front-end", label: "FRONT-END" },
   { id: "back-end", label: "BACK-END · JAVA" },
 ];
@@ -866,9 +872,6 @@ export default function App() {
 
   return (
     <>
-      <style>{css}</style>
-
-      {/* NAV */}
       <nav>
         <a href="#hero" className="logo">
           Thiago<em>.dev</em>
@@ -939,7 +942,7 @@ export default function App() {
       <div id="hero" className="hero">
         <div>
           <div className="hero-label">
-            Desenvolvedor Full-Stack · São Paulo, SP
+            Desenvolvedor Full-Stack com foco em Front-End · São Paulo, SP
           </div>
           <h1 className="hero-name">
             Thiago
@@ -949,8 +952,10 @@ export default function App() {
           <p className="hero-sub">
             Em transição de carreira, construindo com{" "}
             <strong>dedicação e aprendizado constante</strong>. Professor por
-            formação — desenvolvedor por escolha. Mais de{" "}
-            <strong>1.000h de capacitação prática</strong> e projetos reais no ar.
+            formação — desenvolvedor por escolha. Base sólida em front-end e
+            back-end, com foco principal em experiências de front-end. Mais de{" "}
+            <strong>1000h de capacitação prática</strong> e projetos reais no
+            ar.
           </p>
           <div className="hero-stack">
             React · Java · Firebase · AWS · SQL · Spring Boot
@@ -993,7 +998,7 @@ export default function App() {
                 </span>
               </div>
             )}
-            <div className="photo-badge">FULL-STACK · JR</div>
+            <div className="photo-badge">Full-Stack · foco em Front-End</div>
           </div>
         </div>
       </div>
@@ -1003,7 +1008,7 @@ export default function App() {
         <div className="stats-inner">
           {[
             ["10+", "Projetos no GitHub"],
-            ["1.000h+", "Horas de Capacitação"],
+            ["1000h+", "Horas de Capacitação"],
             [certs.length + "", "Certificados Obtidos"],
             ["4", "Formações Acadêmicas"],
           ].map(([n, l]) => (
@@ -1025,17 +1030,20 @@ export default function App() {
           <div className="about-text">
             <p>
               Sou Thiago, entusiasta da tecnologia e estudante de{" "}
-              <strong>Engenharia da Computação</strong>. Unindo o raciocínio
-              lógico das <strong>Ciências Exatas</strong> à visão contextual das{" "}
-              <strong>Ciências Humanas</strong>, construí uma base sólida que me
-              permite aprender qualquer ferramenta ou tecnologia com facilidade.
+              <strong>Engenharia da Computação</strong>. Antes de programar, fui
+              professor — formado em <strong>História</strong> e{" "}
+              <strong>Matemática</strong> —, o que me deu algo raro em tech: a
+              capacidade de <strong>comunicar com clareza</strong> e aprender
+              com profundidade.
             </p>
             <p>
-              Hoje construo aplicações <strong>Full-Stack</strong>:{" "}
-              <strong>React</strong> no Front-End e{" "}
-              <strong>Java + Firebase</strong> no Back-End. Participei do{" "}
+              Hoje atuo como <strong>Desenvolvedor Front-End Jr</strong>: foco
+              em <strong>React</strong>, interfaces responsivas e experiências
+              digitais bem estruturadas, sem abrir mão da base em{" "}
+              <strong>Java</strong>, <strong>Firebase</strong> e integrações de
+              back-end quando o projeto pede. Participei do{" "}
               <strong>Oracle ONE (Alura)</strong> e do{" "}
-              <strong>Bootcamp Santander / DIO</strong>, com mais de 1.000h de
+              <strong>Bootcamp Santander / DIO</strong>, com mais de 1000h de
               formação prática em desenvolvimento, cloud e cibersegurança.
             </p>
             <p>
@@ -1050,23 +1058,23 @@ export default function App() {
             {[
               [
                 "01",
-                "Na graduação de História e  Matemática",
-                "Aprendi simplificar pra entender .",
+                "Professor de Matemática e História",
+                "Aprendi a simplificar o complexo e comunicar com clareza.",
               ],
               [
                 "02",
                 "Oracle ONE + Bootcamp Santander",
-                "1.000h+ de formação intensiva: React, Java, AWS, SQL, Cibersegurança.",
+                "1000h+ de formação intensiva: React, Java, AWS, SQL, Cibersegurança.",
               ],
               [
                 "03",
-                "Graduando em Engenharia da Computação",
-                "Base teórica em sistemas, algoritmos e arquitetura.",
+                "Engenharia da Computação",
+                "Base teórica sólida em sistemas, algoritmos e arquitetura.",
               ],
               [
                 "04",
                 "Projetos reais no ar",
-                "OLLO, Dashboard BI, Cineflix, EcoConecta e mais.",
+                "OLLO, OlloApp Engineering Lab, Dashboard BI, EcoConecta e mais.",
               ],
               [
                 "05",
@@ -1155,7 +1163,7 @@ export default function App() {
                       CÓDIGO
                     </a>
                   ) : (
-                    <span className="plink-private">🔒 PRIVADO</span>
+                    <span className="plink-private">PÚBLICO</span>
                   )}
                   {p.demo && (
                     <a
@@ -1239,14 +1247,14 @@ export default function App() {
         </h2>
         <div className="contact-layout">
           <div className="contact-text">
-            <h3>Buscando minha primeira oportunidade.</h3>
+            <h3>Buscando minha primeira oportunidade profissional.</h3>
             <p>
-              Estou aberto a vagas de{" "}
+              Estou aberto a oportunidades de{" "}
               <strong style={{ color: "var(--amber)" }}>
-                estágio ou desenvolvedor júnior
+                estágio ou posição júnior
               </strong>
-              . Se você valoriza alguém com vontade genuína de aprender,
-              comunicação clara e base técnica sólida — me chama!
+              . Se você busca alguém com vontade genuína de aprender,
+              comunicação clara e base técnica sólida, entre em contato.
             </p>
             <div className="clinks">
               <a href={`mailto:${EMAIL}`} className="clink">
@@ -1284,11 +1292,11 @@ export default function App() {
             {[
               [
                 "Aprendizado acelerado",
-                "1.000h+ de formação em menos de 2 anos, com projetos reais desde o início.",
+                "1000h+ de formação em menos de 2 anos, com projetos reais desde o início.",
               ],
               [
-                "Comunicativo",
-                "Clareza e trabalho em equipe.",
+                "Comunicação excelente",
+                "Ex-professor: documenta bem, explica com clareza, trabalha bem em equipe.",
               ],
               [
                 "Stack relevante",
@@ -1312,8 +1320,8 @@ export default function App() {
       </section>
 
       <footer>
-        <span>THIAGO FERNANDO</span> · DESENVOLVEDOR FULL-STACK · SÃO PAULO ·{" "}
-        {new Date().getFullYear()}
+        <span>THIAGO FERNANDO</span> · desenvolvedor Front-End Júnior · SÃO
+        PAULO · {new Date().getFullYear()}
       </footer>
     </>
   );
