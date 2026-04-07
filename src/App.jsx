@@ -872,6 +872,7 @@ export default function App() {
 
   return (
     <>
+      <style>{css}</style>
       <nav>
         <a href="#hero" className="logo">
           Thiago<em>.dev</em>
