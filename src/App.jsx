@@ -1083,7 +1083,7 @@ export default function App() {
             Engenharia da Computação em andamento.{" "}
             <strong>App real em produção</strong> — construído solo com React,
             Firebase e PWA. Mais de <strong>1.000h de formação prática</strong>{" "}
-            e 49 certificados. Aberto a estágio e CLT.
+            e 49 certificados.
           </p>
           <div className="hero-stack">
             React · Firebase · JavaScript · Java · AWS · SQL
