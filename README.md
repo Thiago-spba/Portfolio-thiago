@@ -1,30 +1,62 @@
-# 👨‍💻 Portfólio | Thiago Fernando
+# Thiago Fernando — Portfólio
 
 [![Acessar Portfólio](https://img.shields.io/badge/Acessar-Portfólio-07111f?style=for-the-badge&logo=vercel)](https://portfolio-thiagosp.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiagospabc)
+[![OLLO App](https://img.shields.io/badge/OLLO_App-1A56DB?style=for-the-badge&logo=firebase&logoColor=white)](https://olloapp.com.br)
 
-Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi desenvolvido para centralizar minha trajetória, projetos técnicos e evolução como Desenvolvedor Full-Stack com foco em Front-End.
+Repositório do meu portfólio pessoal — desenvolvido para apresentar minha trajetória, projetos reais e formação como Desenvolvedor Front-End Júnior.
 
-## 🎯 Objetivo Profissional
+---
 
-Atualmente cursando Engenharia da Computação, estou em busca da minha **primeira oportunidade profissional como Estagiário ou Desenvolvedor Júnior**, com foco principal em Front-End e base consistente em Back-End.
+## Sobre o projeto
 
-Minha base interdisciplinar une a estruturação lógica das Ciências Exatas à análise crítica das Humanas, criando um perfil focado em investigar problemas na raiz, documentar processos com rigor e absorver qualquer ecossistema tecnológico com profundidade.
+Portfólio construído com React e Vite. Apresenta projetos reais, 49 certificações e formação acadêmica de forma clara e objetiva.
 
-## 🛠️ Tecnologias e Arquitetura
+**Destaques:**
+- App real em produção: [OLLO](https://olloapp.com.br) — marketplace social com afiliados Shopee
+- 1.000h+ de formação: Oracle ONE (Alura) + Bootcamp Santander DIO
+- Engenharia da Computação — 5º semestre (Celso Lisboa)
 
-Este projeto foi construído com foco em performance, componentização e boas práticas de distribuição web:
+---
 
-- **Frontend:** React.js
-- **Engine de Build:** Vite (Garantindo compilação e _Hot Module Replacement_ ultrarrápidos)
-- **Integração Contínua & Deploy:** Vercel
-- **PWA (Progressive Web App):** Estrutura configurada com `manifest.json` e ícones escaláveis, permitindo instalação nativa em dispositivos móveis e desktops.
-- **SEO e Metadados:** Implementação nativa de _Open Graph Tags_ para otimização de previews em redes sociais e aplicativos de mensageria corporativa.
+## Tecnologias
 
-## ⚙️ Como executar o projeto localmente
+| Camada | Tecnologia |
+| :--- | :--- |
+| Front-End | React.js, Vite, JavaScript ES6+, Tailwind CSS |
+| Deploy | Vercel |
+| PWA | manifest.json, ícones escaláveis |
+| SEO | Open Graph Tags |
 
-Para inspecionar o código ou rodar o ambiente de desenvolvimento na sua máquina, siga os passos abaixo:
+---
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/Thiago-spba/Portfolio-thiago.git](https://github.com/Thiago-spba/Portfolio-thiago.git)
-   ```
+## Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/Thiago-spba/Portfolio-thiago.git
+
+# Instale as dependências
+cd Portfolio-thiago
+npm install
+
+# Rode em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+```
+
+---
+
+## Contato
+
+| | |
+| :--- | :--- |
+| 📧 E-mail | thiagofernando_sp@yahoo.com.br |
+| 💼 LinkedIn | [linkedin.com/in/thiagospabc](https://www.linkedin.com/in/thiagospabc) |
+| 🚀 OLLO App | [olloapp.com.br](https://olloapp.com.br) |
+
+---
+
+*Construindo com dedicação. Aberto a conversas.* ☕
