@@ -5,6 +5,7 @@ const GITHUB = "https://github.com/Thiago-spba";
 const EMAIL = "thiagofernando_sp@yahoo.com.br";
 const ALURA = "https://cursos.alura.com.br/user/thiagofernando-sp";
 const OLLO = "https://olloapp.com.br";
+const EDUPLAY = "https://eduplay.olloapp.com.br";
 
 const css = `
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Outfit:wght@300;400;500;600;700;800&display=swap');
@@ -45,30 +46,23 @@ body::before {
   pointer-events:none; z-index:0;
 }
 
-/* ── SCROLL REVEAL ── */
 .reveal {
   opacity: 0;
   transform: translateY(32px);
   transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1);
 }
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-left {
-  opacity: 0;
-  transform: translateX(-32px);
+  opacity: 0; transform: translateX(-32px);
   transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1);
 }
 .reveal-left.visible { opacity:1; transform:translateX(0); }
 .reveal-right {
-  opacity: 0;
-  transform: translateX(32px);
+  opacity: 0; transform: translateX(32px);
   transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1);
 }
 .reveal-right.visible { opacity:1; transform:translateX(0); }
 
-/* NAV */
 nav {
   position:fixed; top:0; left:0; right:0; z-index:200;
   background:rgba(7,17,31,0.92);
@@ -97,7 +91,6 @@ nav ul li a::after {
 }
 nav ul li a:hover { color:var(--amber); }
 nav ul li a:hover::after { transform:scaleX(1); }
-
 .nav-cta {
   font-family:'DM Mono',monospace; font-size:.72rem; letter-spacing:1px;
   padding:.5rem 1.2rem; background:var(--blue); color:#fff;
@@ -105,7 +98,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
 }
 .nav-cta:hover { background:var(--blue2); box-shadow: 0 0 20px rgba(26,108,255,.4); }
 
-/* HERO */
 .hero {
   position:relative; z-index:1;
   min-height:100vh; display:grid;
@@ -122,8 +114,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
   opacity:0; animation:fadeUp .6s forwards .1s;
 }
 .hero-label::before { content:''; display:block; width:28px; height:1px; background:var(--amber); }
-
-/* HERO NAME */
 .hero-name {
   font-size:clamp(2.8rem,6vw,5.5rem);
   font-weight:800; line-height:1.05;
@@ -131,7 +121,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
   opacity:0; animation:fadeUp .7s forwards .2s;
 }
 .hero-name span { color:var(--blue2); }
-
 .hero-sub {
   font-size:1.05rem; font-weight:400; color:var(--text2);
   line-height:1.8; max-width:500px; margin-bottom:1rem;
@@ -147,7 +136,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
   display:flex; gap:1rem; flex-wrap:wrap;
   opacity:0; animation:fadeUp .7s forwards .55s;
 }
-
 .btn-primary {
   font-family:'DM Mono',monospace; font-size:.78rem; letter-spacing:1px;
   padding:.85rem 1.8rem; background:var(--blue); color:#fff;
@@ -161,7 +149,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
 }
 .btn-primary:hover::before { transform:translateX(100%); }
 .btn-primary:hover { background:var(--blue2); transform:translateY(-2px); box-shadow:0 8px 24px rgba(26,108,255,.4); }
-
 .btn-outline {
   font-family:'DM Mono',monospace; font-size:.78rem; letter-spacing:1px;
   padding:.85rem 1.8rem; background:transparent; color:var(--text2);
@@ -169,7 +156,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
 }
 .btn-outline:hover { border-color:var(--amber); color:var(--amber); transform:translateY(-2px); }
 
-/* PHOTO */
 .hero-photo {
   display:flex; justify-content:center; align-items:center;
   opacity:0; animation:fadeIn .9s forwards .5s;
@@ -189,8 +175,7 @@ nav ul li a:hover::after { transform:scaleX(1); }
   top:14px; left:14px; right:-14px; bottom:-14px;
   border:1px solid var(--blue);
   clip-path:polygon(10% 0%,100% 0%,100% 90%,90% 100%,0% 100%,0% 10%);
-  z-index:-1; opacity:.4;
-  transition: opacity .3s;
+  z-index:-1; opacity:.4; transition: opacity .3s;
 }
 .photo-frame:hover::before { opacity:.8; }
 .photo-frame::after {
@@ -198,8 +183,7 @@ nav ul li a:hover::after { transform:scaleX(1); }
   top:-8px; left:-8px; right:8px; bottom:8px;
   border:1px solid var(--amber);
   clip-path:polygon(10% 0%,100% 0%,100% 90%,90% 100%,0% 100%,0% 10%);
-  z-index:-1; opacity:.25;
-  transition: opacity .3s;
+  z-index:-1; opacity:.25; transition: opacity .3s;
 }
 .photo-frame:hover::after { opacity:.6; }
 .photo-badge {
@@ -222,7 +206,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
 }
 .photo-placeholder span { font-family:'DM Mono',monospace; font-size:.65rem; color:var(--text2); letter-spacing:1px; text-align:center; padding:0 1rem; }
 
-/* STATS BAR */
 .stats-bar {
   position:relative; z-index:1;
   background:var(--navy2); border-top:1px solid var(--border2); border-bottom:1px solid var(--border2);
@@ -239,7 +222,6 @@ nav ul li a:hover::after { transform:scaleX(1); }
 }
 .stat-label { font-size:.78rem; color:var(--text2); letter-spacing:.5px; }
 
-/* SECTIONS */
 section {
   position:relative; z-index:1;
   padding:90px clamp(1.5rem,5vw,4rem);
@@ -257,7 +239,6 @@ section {
 }
 .sec-heading em { color:var(--blue2); font-style:normal; }
 
-/* ABOUT */
 .about-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:4rem; align-items:start; }
 .about-text p { color:var(--text2); line-height:1.85; font-size:1rem; margin-bottom:1rem; }
 .about-text strong { color:var(--text); }
@@ -282,7 +263,6 @@ section {
 .jtext { font-size:.9rem; color:var(--text2); line-height:1.55; }
 .jtext strong { color:var(--text); }
 
-/* SKILLS */
 .skills-grid {
   display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.2rem; margin-top:3rem;
 }
@@ -291,8 +271,7 @@ section {
   transition:border-color .2s, transform .2s, box-shadow .2s;
 }
 .skill-block:hover {
-  border-color:var(--border2);
-  transform: translateY(-3px);
+  border-color:var(--border2); transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(26,108,255,.1);
 }
 .skill-block h4 {
@@ -307,7 +286,6 @@ section {
 }
 .tag:hover { color:var(--text); border-color:var(--blue2); background:rgba(26,108,255,.15); transform:scale(1.05); }
 
-/* FORMATION */
 .form-list { display:flex; flex-direction:column; gap:.9rem; }
 .form-item {
   display:grid; grid-template-columns:1fr auto; align-items:center; gap:1rem;
@@ -325,10 +303,7 @@ section {
 .fbadge.on { border-color:var(--blue); color:var(--blue); background:rgba(26,108,255,.08); }
 .fbadge.off { border-color:var(--border2); color:var(--text2); }
 
-/* PROJECTS */
-.proj-tabs {
-  display:flex; gap:.6rem; flex-wrap:wrap; margin-bottom:2rem;
-}
+.proj-tabs { display:flex; gap:.6rem; flex-wrap:wrap; margin-bottom:2rem; }
 .ptab {
   font-family:'DM Mono',monospace; font-size:.68rem; letter-spacing:1px;
   padding:.5rem 1.1rem; border:1px solid var(--border2);
@@ -368,8 +343,7 @@ section {
 .stag {
   font-family:'DM Mono',monospace; font-size:.62rem;
   padding:.2rem .55rem; background:rgba(26,108,255,.1);
-  border:1px solid var(--border2); color:var(--blue2);
-  transition: all .2s;
+  border:1px solid var(--border2); color:var(--blue2); transition: all .2s;
 }
 .stag:hover { background:rgba(26,108,255,.2); color:var(--text); }
 .proj-links { display:flex; gap:.5rem; }
@@ -385,7 +359,6 @@ section {
   cursor:default; opacity:.6;
 }
 
-/* CERTIFICATES */
 .cert-bar { display:flex; gap:.8rem; flex-wrap:wrap; margin-bottom:1.5rem; align-items:center; }
 .cert-input {
   font-family:'DM Mono',monospace; font-size:.78rem;
@@ -414,7 +387,6 @@ section {
 .ccard h4 { font-size:.9rem; font-weight:600; color:var(--text); line-height:1.3; margin-bottom:.35rem; }
 .cmeta { font-family:'DM Mono',monospace; font-size:.6rem; color:var(--text2); }
 
-/* CONTACT */
 .contact-layout { display:grid; grid-template-columns:1fr 1fr; gap:4rem; }
 .contact-text h3 { font-size:1.6rem; font-weight:700; margin-bottom:1rem; color:var(--text); }
 .contact-text p { color:var(--text2); line-height:1.85; font-size:1rem; margin-bottom:2rem; }
@@ -445,7 +417,6 @@ footer {
 }
 footer span { color:var(--amber); }
 
-/* Cursor dot */
 .cursor-dot {
   width:6px; height:6px; background:var(--amber);
   border-radius:50%; position:fixed; pointer-events:none;
@@ -527,8 +498,8 @@ const allProjects = [
   {
     cat: "front-end",
     tag: "FULL-STACK · EM PRODUÇÃO",
-    name: "OLLO — Marketplace Social com Afiliados",
-    desc: "App real em produção com usuários ativos, desenvolvido solo nos fins de semana. Marketplace social com curadoria de produtos Shopee, autenticação completa, banco NoSQL em tempo real e push notifications com VAPID/FCM.",
+    name: "OLLO — Marketplace Social",
+    desc: "App real em produção com usuários ativos, desenvolvido solo nos fins de semana. O maior desafio não foi aprender as tecnologias — foi tomar decisões de arquitetura sem equipe: banco de dados, autenticação, push notifications e performance PWA.",
     stack: ["React", "Vite", "Tailwind CSS", "Firebase", "Firestore", "PWA"],
     demo: OLLO,
     repo: null,
@@ -536,27 +507,28 @@ const allProjects = [
   },
   {
     cat: "front-end",
+    tag: "FULL-STACK · EM PRODUÇÃO",
+    name: "EduPlay — Plataforma Educacional Gamificada",
+    desc: "Plataforma para crianças de 11 a 13 anos baseada em missões, podcasts e jogos. IA gerando conteúdo pedagógico via Claude API, conformidade ECA Digital (Lei 14.155/2021) e painel de controle para os responsáveis.",
+    stack: ["React", "Vite", "Firebase", "Claude API", "PWA"],
+    demo: EDUPLAY,
+    repo: null,
+    repoLabel: "PRIVADO",
+  },
+  {
+    cat: "front-end",
     tag: "FRONT-END · IA",
     name: "Dashboard Tisanaria — BI com IA",
-    desc: "Sistema de Business Intelligence para negócio real. Dashboard interativo com React, Tailwind CSS e integração com IA via Gemini API para relatórios e recomendações dinâmicas.",
-    stack: ["React", "Tailwind CSS", "Gemini API", "BI"],
+    desc: "Painel de Business Intelligence para negócio real. Centraliza KPIs, análise de tendências e recomendações via Gemini API — transformando dados em decisões visuais e imediatas.",
+    stack: ["React", "Tailwind CSS", "Recharts", "Gemini API"],
     demo: "https://github.com/Thiago-spba/dashboard-tisanaria-react",
     repo: "https://github.com/Thiago-spba/dashboard-tisanaria-react",
   },
   {
     cat: "front-end",
-    tag: "FRONT-END · PWA",
-    name: "OlloApp Engineering Lab — Portal Educacional",
-    desc: "Portal educacional interativo do ecossistema OLLO, com módulos de Eletrônica Digital, Circuitos Elétricos e Redes de Computadores. Conteúdo gratuito, sem cadastro, com quizzes e linha do tempo histórica.",
-    stack: ["HTML5", "Tailwind CSS", "JavaScript", "Firebase", "PWA"],
-    demo: "https://edu.olloapp.com.br",
-    repo: "https://github.com/Thiago-spba/App-OLLO",
-  },
-  {
-    cat: "front-end",
     tag: "EXTENSÃO UNIVERSITÁRIA",
     name: "Calculadora de Tempo de Tela",
-    desc: "Projeto de Extensão Universitária para conscientização sobre saúde digital. Calcula e visualiza o uso de dispositivos eletrônicos com foco em educação preventiva e acessibilidade.",
+    desc: "Projeto de Extensão Universitária para conscientização sobre saúde digital. Calcula e visualiza o uso de dispositivos com foco em educação preventiva.",
     stack: ["HTML5", "CSS3", "JavaScript", "UX"],
     demo: "https://github.com/Thiago-spba/calculadora-tempo-tela",
     repo: "https://github.com/Thiago-spba/calculadora-tempo-tela",
@@ -565,7 +537,7 @@ const allProjects = [
     cat: "front-end",
     tag: "FRONT-END · WCAG",
     name: "EcoConecta — Portal de Sustentabilidade",
-    desc: "Portal com foco em Acessibilidade WCAG, HTML semântico e SEO. Demonstra capacidade de construir interfaces inclusivas e performáticas.",
+    desc: "Portal com foco em Acessibilidade WCAG, HTML semântico e SEO. Demonstra que uma boa base técnica começa antes do React.",
     stack: ["HTML5 Semântico", "CSS3", "JavaScript", "WCAG", "SEO"],
     demo: "https://eco-conecta-sigma.vercel.app/",
     repo: "https://github.com/Thiago-spba/EcoConecta",
@@ -574,7 +546,7 @@ const allProjects = [
     cat: "front-end",
     tag: "FRONT-END · p5.js",
     name: "Jogo Geométrico Interativo",
-    desc: "Jogo web interativo com gráficos gerados pela biblioteca p5.js. Demonstra criatividade técnica e uso de bibliotecas JavaScript além do básico.",
+    desc: "Jogo web interativo com gráficos gerados pela biblioteca p5.js. Demonstra criatividade técnica e uso de bibliotecas além do básico.",
     stack: ["JavaScript", "p5.js", "HTML5 Canvas", "CSS3"],
     demo: "https://github.com/Thiago-spba/Jogo-Geom-trico",
     repo: "https://github.com/Thiago-spba/Jogo-Geom-trico",
@@ -583,7 +555,7 @@ const allProjects = [
     cat: "back-end",
     tag: "BACK-END · JAVA",
     name: "OlloApp Board Manager — Kanban",
-    desc: "Sistema de gerenciamento de quadros Kanban em Java. Boards, colunas e cards com foco em Clean Code e organização de fluxos de trabalho.",
+    desc: "Sistema de gerenciamento de quadros Kanban em Java. Boards, colunas e cards com foco em Clean Code.",
     stack: ["Java", "OOP", "Kanban", "Clean Code"],
     demo: null,
     repo: "https://github.com/Thiago-spba/olloapp-board-manager",
@@ -592,7 +564,7 @@ const allProjects = [
     cat: "back-end",
     tag: "BACK-END · JAVA",
     name: "Sudoku em Java — Git Flow & Clean Code",
-    desc: "Implementação do Sudoku com foco em boas práticas: Git Flow, Clean Code e Javadoc. Demonstra maturidade no processo de desenvolvimento.",
+    desc: "Implementação do Sudoku com foco em boas práticas: Git Flow, Clean Code e Javadoc.",
     stack: ["Java", "Git Flow", "Clean Code", "Javadoc"],
     demo: null,
     repo: "https://github.com/Thiago-spba/sudoku",
@@ -601,7 +573,7 @@ const allProjects = [
     cat: "back-end",
     tag: "BACK-END · JAVA",
     name: "Design Patterns — Strategy em Java",
-    desc: "Padrão Strategy para cálculo de fretes. Desafio do Bootcamp DIO com foco em padrões de projeto GoF.",
+    desc: "Padrão Strategy para cálculo de fretes. Desafio do Bootcamp DIO com foco em padrões GoF.",
     stack: ["Java", "Design Patterns", "Strategy", "GoF"],
     demo: null,
     repo: "https://github.com/Thiago-spba/lab-padroes-projeto-java",
@@ -921,27 +893,6 @@ const CERT_CATS = [
   "IA · PYTHON",
 ];
 
-// Hook para scroll reveal
-function useScrollReveal() {
-  const ref = useRef(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("visible");
-          obs.unobserve(el);
-        }
-      },
-      { threshold: 0.12 },
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return ref;
-}
-
 function Reveal({ children, className = "", dir = "", delay = 0 }) {
   const ref = useRef(null);
   useEffect(() => {
@@ -1029,8 +980,6 @@ export default function App() {
   return (
     <>
       <style>{css}</style>
-
-      {/* Custom cursor */}
       <div className="cursor-dot" style={{ left: cursor.x, top: cursor.y }} />
       <div
         className="cursor-ring"
@@ -1072,7 +1021,7 @@ export default function App() {
       <div id="hero" className="hero">
         <div>
           <div className="hero-label">
-            Desenvolvedor Front-End Júnior · São Paulo, SP
+            Desenvolvedor Front-End · São Paulo, SP
           </div>
           <h1 className="hero-name">
             Thiago
@@ -1080,10 +1029,11 @@ export default function App() {
             <span>Fernando.</span>
           </h1>
           <p className="hero-sub">
-            Engenharia da Computação em andamento.{" "}
-            <strong>App real em produção</strong> — construído solo com React,
-            Firebase e PWA. Mais de <strong>1.000h de formação prática</strong>{" "}
-            e 49 certificados.
+            Cursando <strong>Engenharia da Computação</strong>. Dois produtos
+            reais em produção — o <strong>OLLO</strong> (marketplace social) e o{" "}
+            <strong>EduPlay</strong> (plataforma educacional com IA),
+            construídos solo com React, Firebase e PWA. Mais de{" "}
+            <strong>1.000h de formação prática</strong>.
           </p>
           <div className="hero-stack">
             React · Firebase · JavaScript · Java · AWS · SQL
@@ -1126,16 +1076,16 @@ export default function App() {
                 </span>
               </div>
             )}
-            <div className="photo-badge">Front-End Júnior</div>
+            <div className="photo-badge">Front-End · React & Firebase</div>
           </div>
         </div>
       </div>
 
-      {/* STATS BAR */}
+      {/* STATS */}
       <div className="stats-bar">
         <div className="stats-inner">
           {[
-            ["10+", "Projetos no GitHub"],
+            ["2", "Apps em Produção"],
             ["1.000h+", "Horas de Formação"],
             [certs.length + "", "Certificados"],
             ["4", "Formações Acadêmicas"],
@@ -1153,30 +1103,32 @@ export default function App() {
         <Reveal>
           <div className="sec-eyebrow">01. Sobre Mim</div>
           <h2 className="sec-heading">
-            Uma trajetória <em>diferente</em>
+            Desenvolvedor <em>que entrega</em>
           </h2>
         </Reveal>
         <div className="about-grid">
           <Reveal dir="left">
             <div className="about-text">
               <p>
-                Sou Thiago, cursando <strong>Engenharia da Computação</strong>{" "}
-                no 5º semestre. Desenvolvo com <strong>React e Firebase</strong>{" "}
-                e tenho o <strong>OLLO</strong> — um marketplace social com
-                usuários reais — como prova do que consigo entregar na prática.
+                Sou desenvolvedor Front-End com base Full-Stack, cursando{" "}
+                <strong>Engenharia da Computação</strong> no 5º semestre. Meu
+                maior laboratório prático é o <strong>OLLO</strong> — um
+                marketplace social que construí do zero, sozinho, do design à
+                produção, usando React, Firebase e Tailwind CSS. Foi onde
+                aprendi que construir software real é diferente de seguir um
+                tutorial.
               </p>
               <p>
-                Antes de programar, fui professor. Isso me deu{" "}
-                <strong>comunicação clara</strong>, raciocínio lógico e a
-                capacidade de aprender com profundidade — habilidades que aplico
-                diretamente no desenvolvimento de software.
+                Também desenvolvi o <strong>EduPlay</strong> — plataforma
+                educacional gamificada para crianças, com IA integrada via
+                Claude API e conformidade ECA Digital. Dois produtos no ar, com
+                usuários reais.
               </p>
               <p>
-                Concluí o <strong>Oracle ONE (Alura)</strong> e o{" "}
-                <strong>Bootcamp Santander DIO</strong>, acumulando mais de
-                1.000h de formação prática em front-end, Java, AWS, SQL e
-                cibersegurança. Estou buscando minha primeira vaga como{" "}
-                <strong>dev front-end</strong>.
+                Antes da tecnologia, fui professor. Isso me deu{" "}
+                <strong>comunicação clara</strong>, paciência para resolver
+                problemas difíceis e empatia para pensar em quem vai usar o que
+                você constrói.
               </p>
             </div>
           </Reveal>
@@ -1186,7 +1138,7 @@ export default function App() {
               {[
                 [
                   "01",
-                  "Professor de Matemática e História",
+                  "Professor",
                   "Aprendi a simplificar o complexo e comunicar com clareza.",
                 ],
                 [
@@ -1201,13 +1153,13 @@ export default function App() {
                 ],
                 [
                   "04",
-                  "OLLO — app real em produção",
-                  "Marketplace social com afiliados Shopee. olloapp.com.br",
+                  "OLLO — marketplace social",
+                  "App em produção com usuários reais. olloapp.com.br",
                 ],
                 [
                   "05",
-                  "Próximo passo",
-                  "Primeira vaga como Dev Front-End Júnior ou Estagiário.",
+                  "EduPlay — plataforma educacional",
+                  "IA + gamificação para crianças. eduplay.olloapp.com.br",
                 ],
               ].map(([n, t, d]) => (
                 <div key={n} className="jstep">
@@ -1426,6 +1378,14 @@ export default function App() {
                   <span className="ci">🚀</span>olloapp.com.br
                 </a>
                 <a
+                  href={EDUPLAY}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="clink"
+                >
+                  <span className="ci">🎓</span>eduplay.olloapp.com.br
+                </a>
+                <a
                   href={ALURA}
                   target="_blank"
                   rel="noreferrer"
@@ -1441,8 +1401,8 @@ export default function App() {
               <h4>// POR QUE ME CONTRATAR?</h4>
               {[
                 [
-                  "App real entregue",
-                  "O OLLO está em produção com usuários reais — não é só curso.",
+                  "2 apps entregues",
+                  "OLLO e EduPlay estão em produção com usuários reais — não é só curso.",
                 ],
                 [
                   "Aprendo rápido",
@@ -1450,11 +1410,11 @@ export default function App() {
                 ],
                 [
                   "Me comunico bem",
-                  "Comunicação clara, documentação cuidadosa e facilidade para trabalhar em equipe.",
+                  "Comunicação clara e facilidade para trabalhar em equipe.",
                 ],
                 [
                   "Entrego na prática",
-                  "React, Firebase, Java, AWS, SQL — com projeto real em produção para comprovar.",
+                  "React, Firebase, Java, AWS, SQL — com produtos reais para comprovar.",
                 ],
               ].map(([t, d], i) => (
                 <div key={i} className="wi">
@@ -1471,8 +1431,8 @@ export default function App() {
       </section>
 
       <footer>
-        <span>THIAGO FERNANDO</span> · Desenvolvedor Front-End Júnior · SÃO
-        PAULO · {new Date().getFullYear()}
+        <span>THIAGO FERNANDO</span> · Desenvolvedor Front-End · SÃO PAULO ·{" "}
+        {new Date().getFullYear()}
       </footer>
     </>
   );
